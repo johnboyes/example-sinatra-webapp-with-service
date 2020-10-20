@@ -1,6 +1,9 @@
 # myapp.rb
 require 'sinatra'
+require 'rest-client'
+require 'json'
 
 get '/' do
-  'Hello world!'
+  url = 'http://jsonplaceholder.typicode.com/users'
+  JSON.parse(RestClient.get(url))[0]['name']
 end
