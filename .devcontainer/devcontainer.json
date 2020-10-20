@@ -18,10 +18,10 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rebornix.Ruby"
-	]
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [4567],
+	"forwardPorts": [4567],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "",
